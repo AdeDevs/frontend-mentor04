@@ -1,7 +1,7 @@
 function Loops() {
     return (
         <div className="container">
-            <head>
+            <header>
                 <nav>
                     <h1>loopstudios</h1>
 
@@ -16,7 +16,7 @@ function Loops() {
                 <div className="box">
                     <p>immersive experiences that deliver</p>
                 </div>
-            </head>
+            </header>
         </div>
     );
 }

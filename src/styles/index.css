@@ -1,2 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
+body {
+    font-size: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container header {
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-image: url('../assets/desktop/image-hero.jpg');
+    padding: 0 100px;
+    height: 50vh;
+    background-position: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
