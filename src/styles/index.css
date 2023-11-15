@@ -14,15 +14,80 @@ body {
     background-color: black;
     color: white;
     box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
 }
 
 .container header {
     box-sizing: border-box;
     margin: 0 auto;
     background-image: url('../assets/desktop/image-hero.jpg');
-    padding: 0 100px;
-    height: 50vh;
-    background-position: unset;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 40px 100px;
+    height: 63vh;
+    background-position: center;
+    width: 100%;
+}
+
+.container nav {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.container nav h1 {
+    font-weight: bolder;
+    text-transform: lowercase;
+    font-size: 1.5em;
+}
+
+.container nav ul {
+    display: inline-flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container nav ul li {
+    margin: auto 5px;
+    padding: 0 10px;
+}
+
+.box {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.box p {
+    border: 2px solid #fff;
+    font-size: 4em;
+    width: 600px;
+    line-height: 1em;
+    font-weight: lighter;
+    padding: 30px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@media (max-width: 770px) {
+    .container header {
+        background-image: url(../assets/mobile/image-hero.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        padding: 40px 30px;
+    }
+    .container nav h1 {
+        font-weight: bolder;
+        font-size: 1.7em;
+    }
+    .container nav ul {
+        display: none;
+    }
+    .box p{
+        width: 100%;
+        font-size: 3em;
+    }
 }
