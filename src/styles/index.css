@@ -3,13 +3,12 @@
 body {
     font-size: 15px;
     margin: 0 auto;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 .container {
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
     height: 100vh;
     background-color: black;
     color: white;
@@ -69,6 +68,15 @@ body {
     text-transform: uppercase;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.vr {
+    height: 90vh;
+    background-color: #fff;
+}
+
+.vr section {
+    color: black;
 }
 
 @media (max-width: 770px) {
