@@ -9,8 +9,6 @@ body {
 .container {
     width: 100%;
     margin: 0 auto;
-    height: 100vh;
-    background-color: black;
     color: white;
     box-sizing: border-box;
     font-family: 'Alata', sans-serif;
@@ -71,12 +69,32 @@ body {
 }
 
 .vr {
-    height: 90vh;
     background-color: #fff;
+    padding: 40px 100px;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-.vr section {
+.vr div {
+    background-color: red;
+    width: 550px;
+    height: 400px;
+    background-image: url('../assets/desktop/image-interactive.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.vr div:nth-child(2) {
+    background-color: red;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 400px;
+    background-image: url();
     color: black;
+    text-align: center;
 }
 
 @media (max-width: 770px) {
