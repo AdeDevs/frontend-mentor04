@@ -1,6 +1,6 @@
 // import googles from './assets/desktop/image-interactive.jpg';
-import {menu} from './assets/menu.jpg';
-import {close} from './assets/close.jpg';
+import menu from './assets/menu.png';
+import close from './assets/close.png';
 
 function Loops() {
     return (
@@ -16,6 +16,10 @@ function Loops() {
                         <li>Products</li>
                         <li>Support</li>
                     </ul>
+                    {/* <div className=''>
+                    <img id='open' src={menu} onClick={showMenu()} alt="menu" />
+                    <img id='close' src={close} alt="menu" />
+                    </div> */}
                 </nav>
                 <div className="box">
                     <p>immersive experiences that deliver</p>
@@ -49,5 +53,7 @@ function Loops() {
         </div>
     );
 }
+
+
 
 export default Loops;
