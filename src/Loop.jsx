@@ -27,7 +27,7 @@ function Loops() {
                     </article>
                 </div>
             </section>
-            <section className="creations">
+            {/* <section className="creations">
                 <header>
                     <h1>OUR CREATIONS</h1>
                     <button>SEE ALL</button>
@@ -42,7 +42,7 @@ function Loops() {
                     <div><p>THE CURIOSITY</p></div>
                     <div><p>MAKE IT FISHEYE</p></div>
                 </section>
-            </section>
+            </section> */}
         </div>
     );
 }
