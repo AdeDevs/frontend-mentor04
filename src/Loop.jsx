@@ -1,4 +1,7 @@
-// import googles from './assets/desktop/image-interactive.jpg'
+// import googles from './assets/desktop/image-interactive.jpg';
+import {menu} from './assets/menu.jpg';
+import {close} from './assets/close.jpg';
+
 function Loops() {
     return (
         <div className="container">
