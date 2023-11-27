@@ -5,7 +5,32 @@ import close from './assets/close.png';
 function Loops() {
     return (
         <div className="container">
-            <header className="menu">
+            <header>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">ADEYEMI</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+            {/* <header className="menu">
                 <nav>
                     <h1>loopstudios</h1>
 
@@ -16,15 +41,12 @@ function Loops() {
                         <li>Products</li>
                         <li>Support</li>
                     </ul>
-                    {/* <div className=''>
-                    <img id='open' src={menu} onClick={showMenu()} alt="menu" />
-                    <img id='close' src={close} alt="menu" />
-                    </div> */}
+                    
                 </nav>
                 <div className="box">
                     <p>immersive experiences that deliver</p>
                 </div>
-            </header>
+            </header> */}
             {/* <section className="vr">
                 <div></div>
                 <div>
