@@ -6,6 +6,51 @@ body {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Montserrat&family=Poppins&display=swap');
+
+.nav-bar {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    display: inline-flex;
+    align-items: center ;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nav-bar p {
+    margin-left: 13px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.nav-bar ul {
+    font-family: 'Comfortaa', sans-serif;
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    padding: 7px 13px;
+    font-weight: bolder;
+    float: left;
+}
+
+.nav-bar ul li:hover {
+    border-bottom: 2px solid red;
+    transition: 200ms;
+}
+
+.card-list {
+    flex-wrap: wrap;
+    display: inline-flex;
+    width: 100%;
+}
+
+.card-list div {
+    margin: 5px auto;
+}
+
 header {
     color: #fff;
     background-color: #262626;
