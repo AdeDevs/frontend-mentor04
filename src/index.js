@@ -4,13 +4,11 @@ import './styles/index.css';
 import './styles/reset.css';
 import Loops from './Loop';
 import reportWebVitals from './reportWebVitals';
-import HamburgerMenu from './hamburger';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Loops /> */}
-    <HamburgerMenu />
+    <Loops />
   </React.StrictMode>
 );
 

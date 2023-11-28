@@ -1,8 +1,17 @@
 import './hamburger.css'
+import MenuScript from './menuScript';
 
 function HamburgerMenu() {
+    // const hamburger = document.querySelector(".hamburger");
+    // const navMenu = document.querySelector(".nav-menu");
+    
+    // hamburger.addEventListener("click", () => {
+    //     hamburger.classList.toggle("active");
+    //     navMenu.classList.toggle("active");
+    // })
   return (
     <>
+    <MenuScript />
       <header>
         <nav class="navbar">
           <a href="#" class="nav-branding">
@@ -41,6 +50,8 @@ function HamburgerMenu() {
     </>
   );
 }
+
+
 
 
 export default HamburgerMenu;
