@@ -1,6 +1,4 @@
 // import googles from './assets/desktop/image-interactive.jpg';
-import menu from './assets/menu.png';
-import close from './assets/close.png';
 
 function Loops() {
     return (
