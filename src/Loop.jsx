@@ -3,32 +3,7 @@
 function Loops() {
     return (
         <div className="container">
-            <header>
-        <nav class="navbar">
-            <a href="#" class="nav-branding">ADEYEMI</a>
-
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-            {/* <header className="menu">
+            <header className="menu">
                 <nav>
                     <h1>loopstudios</h1>
 
@@ -44,8 +19,8 @@ function Loops() {
                 <div className="box">
                     <p>immersive experiences that deliver</p>
                 </div>
-            </header> */}
-            {/* <section className="vr">
+            </header>
+            <section className="vr">
                 <div></div>
                 <div>
                     <article>
@@ -53,7 +28,7 @@ function Loops() {
                     <p>Founed in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
                     </article>
                 </div>
-            </section> */}
+            </section>
             {/* <section className="creations">
                 <header>
                     <h1>OUR CREATIONS</h1>
