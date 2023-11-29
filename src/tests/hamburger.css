@@ -1,4 +1,57 @@
-header {
+.app {
+    text-align: center;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.5em;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu {
+    background-color: #333;
+    position: absolute;
+    top: 70px; /* Adjust as needed based on your header height */
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 15px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 770px) {
+    .hamburger-menu {
+      display: none;
+    }
+  }
+  
+
+/* header {
     color: #fff;
     background-color: #262626;
 }
@@ -88,4 +141,4 @@ li {
     .nav-menu.active {
         left: 0;
     }
-}
+} */

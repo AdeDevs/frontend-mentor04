@@ -1,57 +1,41 @@
 import './hamburger.css'
-import MenuScript from './menuScript';
 
-function HamburgerMenu() {
-    // const hamburger = document.querySelector(".hamburger");
-    // const navMenu = document.querySelector(".nav-menu");
-    
-    // hamburger.addEventListener("click", () => {
-    //     hamburger.classList.toggle("active");
-    //     navMenu.classList.toggle("active");
-    // })
+import React, { useState } from 'react';
+import './hamburger.css'; // Import your CSS file for styling
+
+const Navbar = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <>
-    <MenuScript />
+    <div className="app">
       <header>
-        <nav class="navbar">
-          <a href="#" class="nav-branding">
-            ADEYEMI
-          </a>
-
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Projects
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                Contact
-              </a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
+        <div className="logo">Your Logo</div>
+        <button className="menu-button" onClick={toggleMenu}>
+          ☰ Menu
+        </button>
       </header>
-    </>
+
+      {/* Hamburger Menu */}
+      {isMenuOpen && (
+        <div className="hamburger-menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      )}
+
+      {/* Your main content goes here */}
+      <div className="main-content">
+        <p>Your main content goes here.</p>
+      </div>
+    </div>
   );
-}
+};
 
-
-
-
-export default HamburgerMenu;
+export default Navbar;
