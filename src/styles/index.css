@@ -1,162 +1,404 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
 
 body {
-    font-size: 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  font-size: 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-
 .container {
-    width: 100%;
-    margin: 0 auto;
-    color: white;
-    box-sizing: border-box;
-    font-family: 'Alata', sans-serif;
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
 }
 
 .container .menu {
-    box-sizing: border-box;
-    margin: 0 auto;
-    background-image: url('../assets/desktop/image-hero.jpg');
-    padding: 40px 100px;
-    height: 63vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-image: url("../assets/desktop/image-hero.jpg");
+  padding: 40px 100px;
+  height: 63vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 }
 
 .container nav {
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    box-sizing: border-box;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .container nav h1 {
-    font-weight: bolder;
-    text-transform: lowercase;
-    font-size: 1.5em;
+  font-weight: bolder;
+  text-transform: lowercase;
+  font-size: 1.5em;
 }
 
 .container nav ul {
-    display: inline-flex;
-    align-items: center;
-    list-style-type: none;
+  display: inline-flex;
+  align-items: center;
+  list-style-type: none;
 }
 
 .container nav ul li {
-    margin: auto 5px;
-    padding: 0 10px;
+  margin: auto 5px;
+  padding: 0 10px;
+}
+
+.container nav .menu-btn {
+    width: 32px;
+    display: none;
 }
 
 .box {
-    height: 100%;
-    align-items: center;
-    display: flex;
-    width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  width: 100%;
 }
 
 .box p {
-    border: 2px solid #fff;
-    font-size: 4em;
-    width: 600px;
-    line-height: 1em;
-    font-weight: lighter;
-    padding: 30px;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+  border: 2px solid #fff;
+  font-size: 4em;
+  width: 600px;
+  line-height: 1em;
+  font-weight: lighter;
+  padding: 30px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .vr {
-    width: 100%;
-    height: 85vh;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 85vh;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vr_container {
-    height: 70%;
-    width: 80%;
-    display: inline-flex;
-    flex-wrap: wrap;
-    position: relative;
+  height: 70%;
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .vr_container div {
-    height: 100%;
-    width: 700px;
+  height: 100%;
+  width: 700px;
 }
 
-.vr_container div:nth-child(1){
-    background-color: blue;
-    background-image: url('../assets/desktop/image-interactive.jpg');
-    background-position: center;
-    background-size: cover;
-} 
+.vr_container div:nth-child(1) {
+  background-color: blue;
+  background-image: url("../assets/desktop/image-interactive.jpg");
+  background-position: center;
+  background-size: cover;
+}
 .vr_container div:nth-child(2) {
-    background-color: white;
-    color: black;
-    height: auto;
-    width: 600px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 70px 0px 0px 100px;
-    box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+  background-color: white;
+  color: black;
+  height: auto;
+  width: 600px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 70px 0px 0px 100px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .vr_container h1 {
-    font-size: 3em;
-    font-family: 'Josefin Sans';
-    line-height: 50px;
-    margin-bottom: 30px;
+  font-size: 3em;
+  font-family: "Josefin Sans";
+  line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.creations {
+  color: black;
+  width: 100%;
+}
+
+.creations header {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.creations h1 {
+  font-size: 2em;
+}
+
+.creations button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: 1px solid black;
+  font-family: "Josefin Sans" sans-serif;
+  width: 130px;
+  height: 30px;
+}
+
+.creations_cards {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.creations_cards div {
+  background-color: green;
+  height: 400px;
+  width: 230px;
+  margin: 20px 28px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.6em;
+  position: relative;
+  box-sizing: border-box;
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.creations_cards div p {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.creations_cards div:nth-child(1) {
+  background-image: url("../assets/desktop/image-deep-earth.jpg");
+}
+.creations_cards div:nth-child(2) {
+  background-image: url("../assets/desktop/image-night-arcade.jpg");
+}
+.creations_cards div:nth-child(3) {
+  background-image: url("../assets/desktop/image-soccer-team.jpg");
+}
+.creations_cards div:nth-child(4) {
+  background-image: url("../assets/desktop/image-grid.jpg");
+}
+.creations_cards div:nth-child(5) {
+  background-image: url("../assets/desktop/image-from-above.jpg");
+}
+.creations_cards div:nth-child(6) {
+  background-image: url("../assets/desktop/image-pocket-borealis.jpg");
+}
+.creations_cards div:nth-child(7) {
+  background-image: url("../assets/desktop/image-curiosity.jpg");
+}
+.creations_cards div:nth-child(8) {
+  background-image: url("../assets/desktop/image-fisheye.jpg");
+}
+.mob-btn {
+    display: none;
+}
+
+footer {
+    background-color: #000;
+    box-sizing: border-box;
+}
+footer main, footer sub {
+    display: flex;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+footer h1 {
+    font-size: 25px;
+}
+
+footer main ul, footer sub ul {
+    list-style-type: none;
+    display: flex;
+}
+
+footer main ul li {
+    margin: 20px 7px;
+}
+
+footer main ul img {
+    width: 27px;
+}
+
+footer sub ul li {
+    margin: 20px 30px 20px 0;
+}
+
+footer sub p {
+    color: grey;
+}
+
+.mob-foot {
+    display: block;
 }
 
 @media (max-width: 770px) {
-    .container .menu {
-        background-image: url(../assets/mobile/image-hero.jpg);
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
-        padding: 40px 30px;
-    }
-    .container nav h1 {
-        font-weight: bolder;
-        font-size: 1.7em;
-    }
-    .container nav ul {
-        display: none;
-    }
-    .box p{
-        width: 100%;
-        font-size: 3em;
-    }
-    .vr {
-        height: 90vh;
-    }
-    .vr_container {
-        width: 85%;
-    }
-    .vr_container div:nth-child(1) {
-        background-image: url('../assets/mobile/image-interactive.jpg');
-        background-position: center;
-        background-size: cover;
-        height: 250px;
-    }
-    .vr_container div:nth-child(2) {
-        position: initial;
-        width: auto;
-        padding: 0;
-        text-align: center;
-    }
-    .vr_container h1 {
-        font-size: 2em;
-        text-align: center;
-    }
+  .container .menu {
+    background-image: url(../assets/mobile/image-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px 30px;
+  }
+  .container nav h1 {
+    font-weight: bolder;
+    font-size: 1.7em;
+  }
+  .container nav ul {
+    display: none;
+  }
+  .container nav .menu-btn {
+    display: initial;
+  }
+  .box p {
+    width: 100%;
+    font-size: 3em;
+  }
+  .vr {
+    height: 90vh;
+  }
+  .vr_container {
+    width: 85%;
+  }
+  .vr_container div:nth-child(1) {
+    background-image: url("../assets/mobile/image-interactive.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+  }
+  .vr_container div:nth-child(2) {
+    position: initial;
+    width: auto;
+    padding: 0;
+    text-align: center;
+  }
+  .vr_container h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .creations header {
+    width: 90%;
+    justify-content: center;
+  }
+  .creations button {
+    display: none;
+  }
+  .creations h1 {
+    font-size: 40px;
+  }
+  .creations_cards {
+    width: 99%;
+  }
+  .creations_cards div {
+    width: 100%;
+    height: 170px;
+  }
+  .creations_cards div p {
+    width: 40%;
+    margin: 20px;
+  }
+  .creations_cards div:nth-child(1) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-deep-earth.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-night-arcade.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-soccer-team.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(4) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-grid.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(5) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-from-above.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(6) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-pocket-borealis.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(7) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-curiosity.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .creations_cards div:nth-child(8) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5))
+      url("../assets/mobile/image-fisheye.jpg");
+      background-position: center;
+      background-size: cover;
+  }
+  .mob-btn {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    background: none;
+    border: 1px solid black;
+    font-family: "Josefin Sans" sans-serif;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+  footer main {
+    display: block;
+    text-align: center;
+  }
+  footer h1 {
+    margin: 40px auto;
+    font-size: 35px;
+  }
+  footer sub ul {
+    display: none;
+  }
+  footer main ul {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+  }
+  footer sub p{
+    margin: 0 auto;
+  }
+  .mob-foot {
+    display: block;
+  }
 }
