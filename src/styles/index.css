@@ -70,103 +70,19 @@ body {
 }
 
 .vr {
-    background-color: #fff;
-    padding: 40px 100px;
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 100px auto;
-    box-sizing: border-box;
+    background-color: green;
     width: 100%;
-}
-
-.vr div {
-    background-color: red;
-    width: 550px;
-    height: 400px;
-    background-image: url('../assets/desktop/image-interactive.jpg');
-    background-position: center;
-    background-size: cover;
-}
-
-.vr div:nth-child(2) {
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url();
-    color: black;
-    width: 500px;
-    padding: 30px 40px;
-    box-sizing: border-box;
-    align-items: flex-end;
-    justify-content: center;
+    height: 80vh;
     display: inline-flex;
-}
-
-.vr div h1{
-    font-size: 2em;
-}
-
-.creations {
-    color: black;
-    padding: 20px 100px;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.creations header {
-    display: inline-flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
-.creations section {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.creations section div {
-    height: 410px;
-    width: 250px;
-    background-color: red;
-    margin: 5px auto;
-    color: #fff;
-    font-family: 'Josefin Sans', sans-serif;
-    box-sizing: border-box;
-}
-
-.creations section div p {
+.vr_container {
+    height: 50%;
     width: 50%;
-    font-size: 1.3em;
-    margin: 20px;
-    color: red;
-}
-
-.creations section div:nth-child(1) {
-    background-image: url(../assets/desktop/image-deep-earth.jpg);
-}
-.creations section div:nth-child(2) {
-    background-image: url(../assets/desktop/image-night-arcade.jpg);
-}
-.creations section div:nth-child(3) {
-    background-image: url(../assets/desktop/image-soccer-team.jpg);
-}
-.creations section div:nth-child(4) {
-    background-image: url('../assets/desktop/image-grid.jpg');
-}
-.creations section div:nth-child(5) {
-    background-image: url(../assets/desktop/image-from-above.jpg);
-}
-.creations section div:nth-child(6) {
-    background-image: url(../assets/desktop/image-pocket-borealis.jpg);
-}
-.creations section div:nth-child(7) {
-    background-image: url('../assets/desktop/image-curiosity.jpg');
-}
-.creations section div:nth-child(8) {
-    background-image: url(../assets/desktop/image-fisheye.jpg);
+    background-color: red;
+    display: inline-flex;
 }
 
 @media (max-width: 770px) {

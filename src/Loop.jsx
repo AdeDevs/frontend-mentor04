@@ -1,35 +1,35 @@
-// import googles from './assets/desktop/image-interactive.jpg';
+import googles from './assets/desktop/image-interactive.jpg';
 
 function Loops() {
-    return (
-        <div className="container">
-            <header className="menu">
-                <nav>
-                    <h1>loopstudios</h1>
+  return (
+    <div className="container">
+      <header className="menu">
+        <nav>
+          <h1>loopstudios</h1>
 
-                    <ul>
-                        <li>About</li>
-                        <li>Careers</li>
-                        <li>Events</li>
-                        <li>Products</li>
-                        <li>Support</li>
-                    </ul>
-                    
-                </nav>
-                <div className="box">
-                    <p>immersive experiences that deliver</p>
-                </div>
-            </header>
-            <section className="vr">
-                <div></div>
-                <div>
-                    <article>
-                    <h1>THE LEADER IN INTERACTIVE VR</h1>
-                    <p>Founed in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
-                    </article>
-                </div>
-            </section>
-            {/* <section className="creations">
+          <ul>
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <div className="box">
+          <p>immersive experiences that deliver</p>
+        </div>
+      </header>
+      <section className="vr">
+        <div className="vr_container">
+          <div>
+            {/* <img src={googles} alt="" /> */}
+          </div>
+          <div>
+            {/* <p>Founed in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p> */}
+          </div>
+        </div>
+      </section>
+      {/* <section className="creations">
                 <header>
                     <h1>OUR CREATIONS</h1>
                     <button>SEE ALL</button>
@@ -45,10 +45,8 @@ function Loops() {
                     <div><p>MAKE IT FISHEYE</p></div>
                 </section>
             </section> */}
-        </div>
-    );
+    </div>
+  );
 }
-
-
 
 export default Loops;
