@@ -292,6 +292,7 @@ footer sub p {
     display: none;
 }
 
+
 @media (max-width: 770px) {
   .container .menu {
     background-image: url(../assets/mobile/image-hero.jpg);
@@ -312,6 +313,7 @@ footer sub p {
   }
   .box p {
     width: 100%;
+    box-sizing: border-box;
     font-size: 3em;
   }
   .vr {
@@ -432,12 +434,51 @@ footer sub p {
   footer main ul {
     display: flex;
     margin: 0 auto;
-    width: 50%;
+    justify-content: center;
+    width: 90%;
   }
   footer sub p{
     margin: 0 auto;
+    font-size: 10px;
   }
   .mob-foot {
     display: block;
   }
+}
+
+@media (max-width: 400px) {
+  .box p {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 348px) {
+  .box p {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 280px) {
+    .box p {
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 1.6em;
+    }
+    .vr {
+      height: auto;
+      margin: 20px 0;
+    }
+    .vr_container h1 {
+      font-size: 2em;
+      margin: 20px 0;
+      line-height: normal;
+    }
+    .creations h1 {
+      font-size: 1.8em;
+      margin: 15px 0;
+    }
 }
