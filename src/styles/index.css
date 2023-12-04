@@ -303,11 +303,11 @@ footer sub p {
     height: 100vh;
     padding: 40px 30px;
   }
-  .container nav h1 {
+  .container .desktop-nav h1 {
     font-weight: bolder;
     font-size: 1.7em;
   }
-  .container nav ul {
+  .container .desktop-nav ul {
     display: none;
   }
   .container nav .menu-btn {
@@ -483,4 +483,51 @@ footer sub p {
       font-size: 1.8em;
       margin: 15px 0;
     }
+}
+
+/* Design for the responsive hamburger menu */
+
+.mob-close {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#mob-nav {
+  padding-top: 30px;
+  display: none;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#mob-nav ul {
+  font-family: 'Josefin Sans', sans-serif;
+  height: fit-content;
+  list-style-type: none;
+  display: block;
+}
+
+#mob-nav ul li {
+  margin: 30px 20px;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.mob-cent {
+  height: 90%;
+  display: flex;
+  align-items: center;
+}
+
+#mob-nav h1 {
+  font-size: 32px;
+}
+
+#mob-nav img {
+  width: 30px;
+  height: 30px;
 }

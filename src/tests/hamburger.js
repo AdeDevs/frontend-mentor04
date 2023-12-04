@@ -14,10 +14,6 @@ function Navbar() {
     navRef.current.classList.toggle("responsive_nav");
   };
 
-  function AlertMe() {
-	alert("Hello, look at me")
-  }
-
   return (
     <div className="container">
 		<header className="mob-menu">

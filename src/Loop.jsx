@@ -1,3 +1,4 @@
+import close from "./assets/clos.png";
 import menu from "./assets/menu.png";
 import facebook from './assets/facebook.png';
 import instagram from './assets/instagram.png';
@@ -6,14 +7,17 @@ import twitter from './assets/twitter.png';
 
 function Loops() {
 
-  const AlertMe = () => {
-    alert("Hello, look at me")
+  const OpenMe = () => {
+    document.getElementById('mob-nav').style.display = "block"
     };
+    const CloseMe = () => {
+      document.getElementById('mob-nav').style.display = "none"
+      };  
 
   return (
     <div className="container">
       <header className="menu">
-        <nav>
+        <nav className="desktop-nav">
           <h1>loopstudios</h1>
 
           <ul>
@@ -24,13 +28,33 @@ function Loops() {
             <li>Support</li>
           </ul>
 
-          <img className="menu-btn" onClick={AlertMe} src={menu} alt="menu" />
+          <img className="menu-btn" onClick={OpenMe} src={menu} alt="menu" />
 
         </nav>
         <div className="box">
           <p>immersive experiences that deliver</p>
         </div>
       </header>
+
+      <nav id="mob-nav">
+          <section className="mob-close">
+          <h1>loopstudios</h1>
+          <img className="menu-btn" onClick={CloseMe} src={close} alt="menu" />
+          </section>
+          
+          <section className="mob-cent">
+          <ul>
+            <li onClick={CloseMe}>About</li>
+            <li onClick={CloseMe}>Careers</li>
+            <li onClick={CloseMe}>Events</li>
+            <li onClick={CloseMe}>Products</li>
+            <li onClick={CloseMe}>Support</li>
+          </ul>
+
+          </section>
+          
+          
+        </nav>
 
       <section className="vr">
         <div className="vr_container">
