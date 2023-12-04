@@ -4,18 +4,23 @@ import facebook from './assets/facebook.png';
 import instagram from './assets/instagram.png';
 import pinterest from './assets/pinterest.png';
 import twitter from './assets/twitter.png';
+import { Fade } from "react-reveal";
 
 function Loops() {
 
   const OpenMe = () => {
     document.getElementById('mob-nav').style.display = "block"
     };
-    const CloseMe = () => {
-      document.getElementById('mob-nav').style.display = "none"
-      };  
+    // const CloseMe = () => {
+      
+    //   };  
+      function CloseMe () {
+        document.getElementById('mob-nav').style.display = "none";
+      }
 
   return (
     <div className="container">
+      <Fade top>
       <header className="menu">
         <nav className="desktop-nav">
           <h1>loopstudios</h1>
@@ -35,7 +40,9 @@ function Loops() {
           <p>immersive experiences that deliver</p>
         </div>
       </header>
+      </Fade>
 
+      <Fade left>
       <nav id="mob-nav">
           <section className="mob-close">
           <h1>loopstudios</h1>
@@ -55,6 +62,7 @@ function Loops() {
           
           
         </nav>
+      </Fade>
 
       <section className="vr">
         <div className="vr_container">
@@ -123,7 +131,8 @@ function Loops() {
             <li><img src={instagram} alt="instagram" /></li>
           </ul>
         </main>
-
+        -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
         <sub>
           <ul>
             <li>About</li>

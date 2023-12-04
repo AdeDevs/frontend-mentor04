@@ -498,13 +498,16 @@ footer sub p {
 #mob-nav {
   padding-top: 30px;
   display: none;
+  transition: transform .3s ease-in-out;
   height: 100vh;
   background-color: black;
   position: absolute;
   left: 0;
   top: 0;
 }
+
 #mob-nav ul {
+  transition: 1s;
   font-family: 'Josefin Sans', sans-serif;
   height: fit-content;
   list-style-type: none;
