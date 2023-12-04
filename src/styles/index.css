@@ -151,6 +151,8 @@ ul li:hover::before {
 .creations {
   color: black;
   width: 100%;
+  margin: 50px auto;
+  margin-bottom: 100px;
 }
 
 .creations header {

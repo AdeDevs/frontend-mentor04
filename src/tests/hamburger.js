@@ -1,18 +1,43 @@
-import menu from "./assets/menu.png";
-import facebook from './assets/facebook.png';
-import instagram from './assets/instagram.png';
-import pinterest from './assets/pinterest.png';
-import twitter from './assets/twitter.png';
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import "./hamburger.css";
+import menu from "../assets/menu.png";
+import facebook from "../assets/facebook.png";
+import instagram from "../assets/instagram.png";
+import pinterest from "../assets/pinterest.png";
+import twitter from "../assets/twitter.png";
 
-function Loops() {
+function Navbar() {
+  const navRef = useRef();
 
-  const AlertMe = () => {
-    alert("Hello, look at me")
-    };
+  const showNavbar = () => {
+    navRef.current.classList.toggle("responsive_nav");
+  };
+
+  function AlertMe() {
+	alert("Hello, look at me")
+  }
 
   return (
     <div className="container">
+		<header className="mob-menu">
+			<h3>LOGO</h3>
+			<nav ref={navRef}>
+
+				<button
+					className="nav-btn nav-close-btn"
+					onClick={showNavbar}>
+					<FaTimes />
+				</button>
+			</nav>
+			<button
+				className="nav-btn"
+				onClick={showNavbar}>
+				<FaBars />
+			</button>
+		</header>
       <header className="menu">
+	  
         <nav>
           <h1>loopstudios</h1>
 
@@ -24,8 +49,7 @@ function Loops() {
             <li>Support</li>
           </ul>
 
-          <img className="menu-btn" onClick={AlertMe} src={menu} alt="menu" />
-
+          <img className="menu-btn" src={menu} alt="menu" />
         </nav>
         <div className="box">
           <p>immersive experiences that deliver</p>
@@ -93,10 +117,18 @@ function Loops() {
           </ul>
 
           <ul>
-            <li><img src={facebook} alt="facebook" /></li>
-            <li><img src={twitter} alt="twitter" /></li>
-            <li><img src={pinterest} alt="pinterest" /></li>
-            <li><img src={instagram} alt="instagram" /></li>
+            <li>
+              <img src={facebook} alt="facebook" />
+            </li>
+            <li>
+              <img src={twitter} alt="twitter" />
+            </li>
+            <li>
+              <img src={pinterest} alt="pinterest" />
+            </li>
+            <li>
+              <img src={instagram} alt="instagram" />
+            </li>
           </ul>
         </main>
 
@@ -114,4 +146,4 @@ function Loops() {
   );
 }
 
-export default Loops;
+export default Navbar;
