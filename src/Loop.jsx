@@ -131,8 +131,6 @@ function Loops() {
             <li><img src={instagram} alt="instagram" /></li>
           </ul>
         </main>
-        -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
         <sub>
           <ul>
             <li>About</li>
